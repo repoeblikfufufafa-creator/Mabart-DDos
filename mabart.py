@@ -12,6 +12,7 @@ def clear():
 		os.system('clear')
 
 def logo():
+	attemps:0
     os.system
     print("""
 \033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
