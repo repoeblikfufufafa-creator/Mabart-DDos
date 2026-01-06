@@ -94,16 +94,14 @@ def start_ddos(prox, url, headers, proxies, color):
 def main(proxy, url):
 	clear()
 	print("""
-\033[1;31m╔═════════════════════════════════════════════════════╗       
-\033[1;31m║          
-\033[1;31m║           
-\033[1;31m║   █╗      █╗
-\033[1;31m║   █ █╗  █ █║
-\033[1;31m║   █║  █║  █║
-\033[1;31m║   █║  █║  █║
-\033[1;31m║   █║  ╚╝  █║
-\033[1;31m║   █║      █║
-\033[1;31m║   ╚╝      ╚╝
+\033[1;31m╔═════════════════════════════════════════════════════╗          
+\033[1;31m║   █████╗   █████╗
+\033[1;31m║   █╔═══█║ █╔═══█║
+\033[1;31m║   █║     █║ █║     █║
+\033[1;31m║   █║     █║ █║     █║
+\033[1;31m║   █║███║  █║███╗
+\033[1;31m║   █║         █║     █║
+\033[1;31m║   ╚╝         ╚╝     ╚╝
 \033[1;31m╚═════════════════════════════════════════════════════╝""")
 
 	if url == None:
@@ -115,7 +113,7 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+ "Found {} new proxies".format(len(array) +Fore.BLUE "Proxy-attack".))
+			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
 			check_prox(array, url)
 	else:
 		try:
