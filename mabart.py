@@ -41,7 +41,7 @@ optional.add_argument('-payload', help='Set payload as hex-string')
 
 
 print(f"\ninfo launch.\n")
-print(f"\033[33m " + (ip) " \033[97mTrue lounh \033[0m")
+print(f"\033[33m "+ str(attack_num)+" \033[97mTrue lounh \033[0m")
 args = parser.parse_args()
 connected = 0
 dropped = 0
