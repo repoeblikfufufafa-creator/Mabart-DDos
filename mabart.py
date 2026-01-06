@@ -115,7 +115,7 @@ def main(proxy, url):
 		while True:
 			req = r.get("https://api.proxyscrape.com/?request=displayproxies")
 			array = req.text.split()
-			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array))+Style.RESET_ALL)
+			print(Back.YELLOW+Fore.WHITE+"Found {} new proxies".format(len(array)) Fore.BLUE+ "Info-proxy" +Style.RESET_ALL)
 			check_prox(array, url)
 	else:
 		try:
