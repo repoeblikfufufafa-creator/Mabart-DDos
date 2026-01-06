@@ -1,8 +1,13 @@
 #!/usr/bin/env python
+import os
+import sys
 import socket
-from time import sleep
-from threading import Thread, active_count
-from os import system, geteuid
+from time 
+import sleep
+from threading 
+import Thread
+import active_count
+import geteuid
 import random
 import string
 import signal
