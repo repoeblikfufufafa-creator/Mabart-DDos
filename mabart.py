@@ -38,6 +38,16 @@ optional.add_argument('-ssl', action='store_true',  help='Enable SSL')
 optional.add_argument('-http', action='store_true',  help='Enable HTTP headers (only if custom payload not set)')
 optional.add_argument('-payload', help='Set payload as hex-string')
 
+
+
+print("\nKittenz launcher.\n")
+args = parser.parse_args()
+connected = 0
+dropped = 0
+payloads = 0
+port = args.port
+
+
 # Sort out http URI in targets
 target = args.target.replace('http://','').replace('https://','')
 
