@@ -12,7 +12,7 @@ def clear():
 		os.system('clear')
 
 def logo():
-def ascii_art_sniperelite():
+    os.system
     print("""
 \033[1;31m        __/ __/ __/       __/ __/     __/ __/ __/   __/ __/ __/  \033[0m
 \033[1;31m       __/       __/  __/      __/  __/            __/          \033[0m
